@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="icon" type="image/JPG" href="image\\logo.JPG" />
+<title>LOG IN</title>
+<link rel="stylesheet" type="text/css" href="css\\vurivoj.css">
+<script type="text/javascript" src=""></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" >
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" ></script>
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" type="text/css" href="css\\new.css">
+<link href="content/styles.css" rel="stylesheet" />
+<meta>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<script>
+$('#here ').click(function() {
+		$.ajax({
+			url : 'C:/Users/mm0419/Desktop/RepoTestApp-master/Vuri_Voj/WebContent/index.jsp',
+			method : 'GET',
+			data : {
+				userName : $('#txt1').val()
+			},
+			success : function(responseText) {
+				$('#d2').text(responseText);
+			}
+		});
+	});
+</script>-->	
+	
+</head>
+<body background="image\\background_old.jpg">
+<div class="container-fluid">
+<div class="row">
+		<div class="col-sm-12">
+			<div id="header">
+				<div class="logo">
+					<img src="image\\logo.JPG">
+				</div>
+				<div id="nav">
+					<a href="home.html" class="ab">Home</a>
+					<a href="login.html" class="ab">Log In</a>
+					<a href="#contact" class="ab">Contact</a>
+				</div>
+				<div id="menubar">
+					<span class="mbar1"></span>
+					<span class="mbar1"></span>
+					<span class="mbar1"></span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12">
+			<div id="menuForMobile" >
+				<li><span class="glyphicon glyphicon-user"></span> &nbsp;Profile</li>
+				<li><span class="glyphicon glyphicon-log-in"></span> &nbsp;Login</li>
+				<li><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Contact</li>
+			</div>
+		</div>
+	</div>
+		<div class="row" id="content">
+		<div class="col-xs-0 col-sm-0 col-md-4 col-lg-4"></div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="padding-top: 60px;" >
+			<div style="border-radius: 5px; background-color: #45796d59;">
+				<center>
+				<form action="login.htm" method="post">
+				<h1 style="color:#80ec85; padding-top:20px;">Log In </h1>
+				<input type="text" name="email" placeholder="Enter Email Id"><br><br>
+				<input type="password" name="pass" placeholder="Enter Password"><br><br>
+				<input type="submit" value="Log In">
+				<br>
+				<b id='registerhere'>New User ? </b> 
+				<br>
+				<input type='button' onclick="location.href='index.html';" id = 'here' value='Sign Up'>
+				<br><br><br>
+				</form>
+				</center>
+			<div id="selection" class="required"></div>
+			</div>
+		</div>
+		<div class="col-xs-0 col-sm-0 col-md-4 col-lg-4"></div>
+	</div>
+</div>
+<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    
+	    $(document).ready(function(){
+	    	$('#menubar').click(function(){
+			    $('#menuForMobile').slideToggle();
+			})
+	    });
+    </script>
+</body>
+</html>

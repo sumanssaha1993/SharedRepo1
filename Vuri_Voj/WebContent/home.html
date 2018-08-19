@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/JPG" href="image\\logo.JPG" />
+<title>VURI VOJ</title>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" >
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" ></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css\\new.css">
+<script src="js\\myjs.js"></script>
+<link href="content/styles.css" rel="stylesheet" />
+<meta>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body background="image\\background.jpg">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<div id="header">
+				<div class="logo">
+					<img src="image\\logo.JPG">
+				</div>
+				<div id="nav">
+					<a href="home.html" class="ab">Home</a>
+					<a href="login.html" class="ab">Log In</a>
+					<a href="#contact" class="ab">Contact</a>
+				</div>
+				<div id="menubar">
+					<span class="mbar1"></span>
+					<span class="mbar1"></span>
+					<span class="mbar1"></span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12">
+			<div id="menuForMobile" >
+				<li><span class="glyphicon glyphicon-user"></span> &nbsp;Profile</li>
+				<li><span class="glyphicon glyphicon-log-in"></span> &nbsp;Login</li>
+				<li><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Contact</li>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="content">
+		<div class="col-xs-0 col-sm-0 col-md-4 col-lg-4"></div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="searchdiv">
+			<div class="inner-addon right-addon">
+				<span class="glyphicon glyphicon-search"></span>
+				<input type="search" name="country" id="autocomplete" class="form-control searchbox" placeholder="Search Food Here">
+				
+			</div>
+			<div id="selection" class="required"></div>
+		</div>
+		<div class="col-xs-0 col-sm-0 col-md-4 col-lg-4"></div>
+	</div>
+	<div class="row bg-grey">
+		<div class="col-sm-4" >
+			<div class="mybox a" ><h1 id="bengali">Exclusive Bengali Foods</h1></div>
+		</div>
+		<div class="col-sm-4">
+			<div class="mybox b"><h1 id="south">Original South Indian Foods</h1></div>
+		</div>
+		<div class="col-sm-4">
+			<div class="mybox c"><h1 id="non">Pure Non Veg Foods</h1></div>
+		</div>
+	</div>
+	<div class="row bg-grey">
+		<div class="col-sm-4">
+			<div class="mybox d"><h1 id="chinese">Wonderful Chinese Foods</h1></div>
+		</div>
+		<div class="col-sm-4">
+			<div class="mybox e"><h1 id="veg">Pure Veg Foods</h1></div>
+		</div>
+		<div class="col-sm-4">
+			<div class="mybox f">
+			<h1 id="desert">Delicious Deserts</h1>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<!-- <script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script> -->
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<!-- <script type="text/javascript" src="src/jquery.autocomplete.js"></script> -->
+
+	<script type="text/javascript">
+    
+	    $(document).ready(function(){
+	    	$('#menubar').click(function(){
+			    $('#menuForMobile').slideToggle();
+			})
+	    	 
+	    	$("#autocomplete").autocomplete({
+	    		//lookup: countries,
+	    		serviceUrl:'search.htm', //tell the script where to send requests
+	    	  
+	    	    width: 450, //set width
+	    	    
+	    	    //callback just to show it's working
+	    	    onSelect: function (suggestion) {
+	       				$('#selection').html('You selected: ' + suggestion.value );
+	    				},
+	    	showNoSuggestionNotice: true,
+	        noSuggestionNotice: 'Sorry, no matching results',
+	    	
+	    	
+	    	});
+	    });
+    </script>
+</body>
+</html>

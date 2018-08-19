@@ -1,0 +1,182 @@
+ 
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+}
+
+#reg_panel{
+	
+    border-radius: 5px;
+    background-color: #45796d59;
+    padding: 20px;
+    margin-top: 110px;
+    margin-bottom: 50px;
+    margin-left: 35%;
+    
+}
+
+#myform{
+	text-align:center;
+	
+}
+ 
+input[type=text], select {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color:#008000;
+}
+input[type=text]:hover {
+    background-color: #e6ffe6;
+}
+input[type=number], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:#008000;
+}
+input[type=number]:hover {
+    background-color: #e6ffe6;
+}
+input[type=password], select {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color:#008000;
+}
+input[type=password]:hover {
+    background-color: #e6ffe6;
+}
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #80ff80;
+    color: black;
+}
+
+#navbar {
+	display:block;
+	width:100%;
+	height:100px;
+	border:1px solid red;
+  /* overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+   width: 100%; 
+  height:65px; */
+}
+ .col-sm-12{
+ padding-left:0px;
+ padding-right:0px;
+ }
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 23px 27px;
+  text-decoration: none;
+  font-size: 17px;
+ 
+}
+
+#navbar a:hover {
+  background-color: #4CAF50;
+  color: black;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #f90000;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+.row{
+	padding-left:0px;
+	padding-right:0px;
+}
+
+#registerhere{
+	color:#00ff0a;
+}
+#here{
+	width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#phone{
+	width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color:#008000;
+}
+#phone:hover {
+    background-color: #e6ffe6;
+}
+
