@@ -8,18 +8,21 @@ import javax.persistence.Table;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
-@Table(name = "user_details_hdr")
+@Table(name = "user_hdr")
 public class UserDTO {
-	/*@Id
-	@GenericGenerator(name = "incr", strategy = "increment")
-	@GeneratedValue(generator = "incr")
-	private int uid;*/
-	private String name;
+	@Id
+/*	@GenericGenerator(name = "incr", strategy = "increment")
+	@GeneratedValue(generator = "incr")*/
+	private String user_id;
+	private String fname;
+	private String lname;
 	@Id
 	private String email;
-	private long phone;
+	private long mobile;
 	private String address;
 	private String password;
+	private boolean is_active;
+	private String user_type;
 
 	/*public int getUid() {
 		return uid;
@@ -29,13 +32,7 @@ public class UserDTO {
 		this.uid = uid;
 	}*/
 
-	public String getName() {
-		return name;
-	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
 
 	public String getEmail() {
 		return email;
@@ -45,12 +42,54 @@ public class UserDTO {
 		this.email = email;
 	}
 
-	public long getPhone() {
-		return phone;
+	
+
+	public String getUser_id() {
+		return user_id;
 	}
 
-	public void setPhone(long phone) {
-		this.phone = phone;
+	public void setUser_id(String user_id) {
+		this.user_id = user_id;
+	}
+
+	public String getFname() {
+		return fname;
+	}
+
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+
+	public String getLname() {
+		return lname;
+	}
+
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+
+	public long getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(long mobile) {
+		this.mobile = mobile;
+	}
+
+	public boolean isIs_active() {
+		return is_active;
+	}
+
+	public void setIs_active(boolean is_active) {
+		this.is_active = is_active;
+	}
+
+	public String getUser_type() {
+		return user_type;
+	}
+
+	public void setUser_type(String user_type) {
+		this.user_type = user_type;
 	}
 
 	public String getAddress() {
@@ -71,8 +110,11 @@ public class UserDTO {
 
 	@Override
 	public String toString() {
-		return "UserDTO [name=" + name + ", email=" + email + ", phone=" + phone + ", address="
-				+ address + ", password=" + password + "]";
+		return "UserDTO [user_id=" + user_id + ", fname=" + fname + ", lname=" + lname + ", email=" + email
+				+ ", mobile=" + mobile + ", address=" + address + ", password=" + password + ", is_active=" + is_active
+				+ ", user_type=" + user_type + "]";
 	}
+
+
 
 }
